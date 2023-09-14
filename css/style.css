@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background: url(/images/bg.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+a{
+    color: #005DA6;
+    text-decoration: none;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+}
+
+.container{
+    width: 470px;
+    height: 600px;
+    margin: 8% auto;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.formContainer{
+    background-color: #fff;
+    box-shadow: 0 0 10px #c9c9c9;
+    padding: 3rem;
+}
+
+form, #form2{
+    position: absolute;
+    width: 450px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form h4, #form2 h4{
+    font-weight: 400;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    padding-bottom: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 1.7rem;
+}
+
+form .formContainer input:focus{
+    border-bottom: 1px solid #005DA6;
+}
+
+form .formContainer p{
+    margin-bottom: 1.8rem;
+    display: flex;
+    gap: 5px;
+    color: #404040;
+    font-size: 14px;
+}
+
+form a{
+    display: block;
+    font-size: 14px;
+}
+
+form .buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 3rem;
+}
+
+form .buttons button{
+    padding: 7px 30px;
+}
+
+form .buttons button:nth-of-type(1){
+    background-color: #CCCCCC;
+}
+
+form .buttons button:nth-of-type(2){
+    background-color: #005DA6;
+    color: #fff;
+}
+
+form .buttons button:nth-of-type(1):hover{
+    background-color: #acacac;
+}
+
+form .buttons button:nth-of-type(2):hover{
+    background-color: #005291;
+}
+
+form .sign-in-options{
+    box-shadow: 0 0 10px #c9c9c9;
+    background-color: #fff;
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+    color: #404040;
+    cursor: pointer;
+}
+
+form .sign-in-options:hover{
+    background-color: #ededed;
+}
+
+form .sign-in-options i{
+    font-size: 18px;
+}
+
+#form2 .formContainer{
+    box-shadow: none;
+    padding: 0;
+}
+
+#form2{
+    left: 150%;
+    transition: .5s;
+    height: 500px;
+    box-shadow: 0 0 10px #c9c9c9;
+    background-color: #fff;
+}
+
+#form3{
+    left: 150%;
+}
+
+#form2 .options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border: 1px dashed transparent;
+    /* margin: 30px 0; */
+}
+
+#form2 .header{
+    padding: 3rem 3rem 0;
+}
+
+#form2 .options:hover{
+    background-color: #CCCCCC;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+#form2 .options div:nth-child(1){
+    display: flex;
+    gap: 10px;
+}
+
+#form2 .options div i{
+    font-size: 2rem;
+}
+
+#form2 .options div p{
+    color: #333;
+}
+
+#form2 .options div p:nth-child(2){
+    font-size: 12px;
+}
+
+#form2 .sign-in-options-back-btn{
+    margin-top: 2rem;
+    background-color: #CCCCCC;
+    padding: 7px 30px;
+    position: absolute;
+    right: 30px;
+}
+
+#form2 p{
+    font-size: 14px;
+}
+
+#form1 {
+    transition: .5s;
+}
