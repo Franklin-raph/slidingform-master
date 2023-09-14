@@ -38,7 +38,7 @@ button{
     padding: 3rem;
 }
 
-#form1, #form2{
+#form1, #form2, #form3{
     position: absolute;
     width: 450px;
     left: 50%;
@@ -46,7 +46,7 @@ button{
     transform: translate(-50%, -50%);
 }
 
-#form1 h4, #form2 h4{
+#form1 h4, #form2 h4, #form3 h4{
     font-weight: 400;
     font-size: 22px;
     margin: 20px 0;
@@ -127,12 +127,12 @@ input{
     font-size: 18px;
 }
 
-#form2 .formContainer{
+#form2 .formContainer, #form3 .formContainer{
     box-shadow: none;
     padding: 0;
 }
 
-#form2{
+#form2, #form3{
     left: 150%;
     transition: .5s;
     height: 500px;
@@ -141,10 +141,10 @@ input{
 }
 
 #form3{
-    left: 150%;
+    height: 400px;
 }
 
-#form2 .options{
+#form2 .options, #form3 .options{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -154,34 +154,34 @@ input{
     /* margin: 30px 0; */
 }
 
-#form2 .header{
+#form2 .header, #form3 .header{
     padding: 3rem 3rem 0;
 }
 
-#form2 .options:hover{
+#form2 .options:hover, #form3 .options:hover{
     background-color: #CCCCCC;
     border-top: 1px dashed black;
     border-bottom: 1px dashed black;
 }
 
-#form2 .options div:nth-child(1){
+#form2 .options div:nth-child(1), #form3 .options div:nth-child(1){
     display: flex;
     gap: 10px;
 }
 
-#form2 .options div i{
+#form2 .options div i, #form3 .options div i{
     font-size: 2rem;
 }
 
-#form2 .options div p{
+#form2 .options div p, #form3 .options div p{
     color: #333;
 }
 
-#form2 .options div p:nth-child(2){
+#form2 .options div p:nth-child(2), #form3 .options div p:nth-child(2){
     font-size: 12px;
 }
 
-#form2 .sign-in-options-back-btn{
+#form2 .sign-in-options-back-btn, #form3 .sign-in-options-back-btn{
     margin-top: 2rem;
     background-color: #CCCCCC;
     padding: 7px 30px;
@@ -189,7 +189,7 @@ input{
     right: 30px;
 }
 
-#form2 p{
+#form2 p, #form3 p{
     font-size: 14px;
 }
 
@@ -203,4 +203,16 @@ input{
     color: red;
     display: none;
     font-size: 13px;
+}
+
+.ri-user-line{
+    font-weight: 300;
+}
+
+#form2 a, #form3 a, #form2 i, #form3 i{
+    color: #404040;
+}
+
+@media screen and (max-width: 400px) {
+    
 }
