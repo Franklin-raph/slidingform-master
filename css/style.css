@@ -11,6 +11,7 @@ body{
     background-position: center;
     background-size: cover; */
     overflow: hidden;
+    /* padding-top: 9rem; */
 }
 
 a{
@@ -25,11 +26,10 @@ button{
 
 .container{
     width: 470px;
-    height: 600px;
-    margin: 8% auto;
+    height: 520px;
+    margin: 2% auto 0;
     position: relative;
     overflow: hidden;
-    /* border: 1px solid red; */
 }
 
 .formContainer{
@@ -38,7 +38,7 @@ button{
     padding: 3rem;
 }
 
-form, #form2{
+#form1, #form2{
     position: absolute;
     width: 450px;
     left: 50%;
@@ -46,7 +46,7 @@ form, #form2{
     transform: translate(-50%, -50%);
 }
 
-form h4, #form2 h4{
+#form1 h4, #form2 h4{
     font-weight: 400;
     font-size: 22px;
     margin: 20px 0;
@@ -62,52 +62,52 @@ input{
     margin-bottom: 1.7rem;
 }
 
-form .formContainer input:focus{
+#form1 .formContainer input:focus{
     border-bottom: 1px solid #005DA6;
 }
 
-form .formContainer p{
-    margin-bottom: 1.8rem;
+#form1 .formContainer p{
+    margin-bottom: 1rem;
     display: flex;
     gap: 5px;
     color: #404040;
     font-size: 14px;
 }
 
-form a{
+#form1 a{
     display: block;
     font-size: 14px;
 }
 
-form .buttons{
+#form1 .buttons{
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
-form .buttons button{
+#form1 .buttons button{
     padding: 7px 30px;
 }
 
-form .buttons button:nth-of-type(1){
+#form1 .buttons button:nth-of-type(1){
     background-color: #CCCCCC;
 }
 
-form .buttons button:nth-of-type(2){
+#form1 .buttons button:nth-of-type(2){
     background-color: #005DA6;
     color: #fff;
 }
 
-form .buttons button:nth-of-type(1):hover{
+#form1 .buttons button:nth-of-type(1):hover{
     background-color: #acacac;
 }
 
-form .buttons button:nth-of-type(2):hover{
+#form1 .buttons button:nth-of-type(2):hover{
     background-color: #005291;
 }
 
-form .sign-in-options{
+#form1 .sign-in-options{
     box-shadow: 0 0 10px #b0b0b0;
     background-color: #fff;
     padding: 1rem 3rem;
@@ -119,11 +119,11 @@ form .sign-in-options{
     cursor: pointer;
 }
 
-form .sign-in-options:hover{
+#form1 .sign-in-options:hover{
     background-color: #ededed;
 }
 
-form .sign-in-options i{
+#form1 .sign-in-options i{
     font-size: 18px;
 }
 
@@ -195,4 +195,12 @@ form .sign-in-options i{
 
 #form1 {
     transition: .5s;
+}
+
+#form1 .error-text{
+    margin-bottom: 0; 
+    padding-bottom: 5px; 
+    color: red;
+    display: none;
+    font-size: 13px;
 }
