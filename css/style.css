@@ -38,7 +38,7 @@ button{
     padding: 3rem;
 }
 
-#form1, #form2, #form3{
+#form1, #form2, #form3, #form4{
     position: absolute;
     width: 450px;
     left: 50%;
@@ -46,7 +46,7 @@ button{
     transform: translate(-50%, -50%);
 }
 
-#form1 h4, #form2 h4, #form3 h4{
+#form1 h4, #form2 h4, #form3 h4, #form4 h4{
     font-weight: 400;
     font-size: 22px;
     margin: 20px 0;
@@ -62,11 +62,11 @@ input{
     margin-bottom: 1.7rem;
 }
 
-#form1 .formContainer input:focus{
+#form1 .formContainer input:focus,  #form4 .formContainer input:focus{
     border-bottom: 1px solid #005DA6;
 }
 
-#form1 .formContainer p{
+#form1 .formContainer p, #form4 .formContainer p{
     margin-bottom: 1rem;
     display: flex;
     gap: 5px;
@@ -74,7 +74,7 @@ input{
     font-size: 14px;
 }
 
-#form1 a{
+#form1 a, #form4 a{
     display: block;
     font-size: 14px;
 }
@@ -86,28 +86,35 @@ input{
     margin-top: 2rem;
 }
 
-#form1 .buttons button{
+#form4 .buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 4rem;
+}
+
+#form1 .buttons button, #form4 .buttons button{
     padding: 7px 30px;
 }
 
-#form1 .buttons button:nth-of-type(1){
+#form4 .buttons button:nth-of-type(1){
     background-color: #CCCCCC;
 }
 
-#form1 .buttons button:nth-of-type(2){
+#form1 .form1-next-btn, #form4 .buttons button:nth-of-type(2){
     background-color: #005DA6;
     color: #fff;
 }
 
-#form1 .buttons button:nth-of-type(1):hover{
+#form1 .buttons button:nth-of-type(1):hover, #form4 .buttons button:nth-of-type(1):hover{
     background-color: #acacac;
 }
 
-#form1 .buttons button:nth-of-type(2):hover{
+#form1 .buttons button:nth-of-type(2):hover, #form4 .buttons button:nth-of-type(2):hover{
     background-color: #005291;
 }
 
-#form1 .sign-in-options{
+#form1 .sign-in-options, #form4 .sign-in-options{
     box-shadow: 0 0 10px #b0b0b0;
     background-color: #fff;
     padding: 1rem 3rem;
@@ -119,11 +126,11 @@ input{
     cursor: pointer;
 }
 
-#form1 .sign-in-options:hover{
+#form1 .sign-in-options:hover, #form4 .sign-in-options:hover{
     background-color: #ededed;
 }
 
-#form1 .sign-in-options i{
+#form1 .sign-in-options i, #form4 .sign-in-options i{
     font-size: 18px;
 }
 
@@ -132,7 +139,11 @@ input{
     padding: 0;
 }
 
-#form2, #form3{
+#form4 .formContainer{
+    box-shadow: none;
+}
+
+#form2, #form3, #form4{
     left: 150%;
     transition: .5s;
     height: 500px;
@@ -140,7 +151,25 @@ input{
     background-color: #fff;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #form3{
+    height: 400px;
+}
+
+#form4{
     height: 400px;
 }
 
@@ -197,7 +226,7 @@ input{
     transition: .5s;
 }
 
-#form1 .error-text{
+#form1 .error-text, #form4 .error-text{
     margin-bottom: 0; 
     padding-bottom: 5px; 
     color: red;
@@ -213,6 +242,17 @@ input{
     color: #404040;
 }
 
-@media screen and (max-width: 400px) {
-    
+@media screen and (max-width: 450px) {
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    #form1, #form2, #form3, #form4{
+        width:350px
+    }
 }
