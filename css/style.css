@@ -5,12 +5,13 @@
     font-family: 'Rubik', sans-serif;
 }
 
-body{
+html,body{
     /* background: url(/images/bg.jfif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; */
     overflow: hidden;
+    width: 100%;
     /* padding-top: 9rem; */
 }
 
@@ -44,6 +45,8 @@ button{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    margin: auto;
+    /* overflow-x: hidden; */
 }
 
 #form1 h4, #form2 h4, #form3 h4, #form4 h4{
